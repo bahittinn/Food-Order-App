@@ -21,19 +21,57 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="627"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K9d-mg-csL">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="393" height="605"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xcd-MP-Sjz">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="Xcd-MP-Sjz" customClass="OnboardingCollectionViewCell" customModule="Food_Order" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="605"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WoQ-80-lHp">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="605"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J8v-rN-MwL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="514"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9el-jF-bLE">
+                                                    <rect key="frame" x="16" y="514" width="361" height="75"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery At Your Doorstep" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsi-T7-JfL">
+                                                            <rect key="frame" x="45.333333333333343" y="0.0" width="270.66666666666663" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and Online reservation system for restaurants and cafes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7x-th-Wpr">
+                                                            <rect key="frame" x="12.333333333333343" y="39" width="336.33333333333326" height="36"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="J8v-rN-MwL" secondAttribute="trailing" id="9AK-cI-cdD"/>
+                                                <constraint firstItem="J8v-rN-MwL" firstAttribute="top" secondItem="WoQ-80-lHp" secondAttribute="top" id="R2c-uW-j0Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="9el-jF-bLE" secondAttribute="trailing" constant="16" id="Xpp-G4-xjn"/>
+                                                <constraint firstAttribute="bottom" secondItem="9el-jF-bLE" secondAttribute="bottom" constant="16" id="g94-GE-mcO"/>
+                                                <constraint firstItem="J8v-rN-MwL" firstAttribute="leading" secondItem="WoQ-80-lHp" secondAttribute="leading" id="kTe-dA-sME"/>
+                                                <constraint firstItem="9el-jF-bLE" firstAttribute="top" secondItem="J8v-rN-MwL" secondAttribute="bottom" id="lKZ-6a-5Db"/>
+                                                <constraint firstItem="9el-jF-bLE" firstAttribute="top" secondItem="J8v-rN-MwL" secondAttribute="bottom" id="s5Y-bv-AWs"/>
+                                                <constraint firstItem="9el-jF-bLE" firstAttribute="leading" secondItem="WoQ-80-lHp" secondAttribute="leading" constant="16" id="xIu-c2-61q"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="605"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLabel" destination="l7x-th-Wpr" id="GhZ-jd-b9u"/>
+                                            <outlet property="slideImageView" destination="J8v-rN-MwL" id="qt4-vB-Hif"/>
+                                            <outlet property="slideTitleLabel" destination="hsi-T7-JfL" id="ew1-qL-weX"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -58,7 +96,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-Ht-frF">
-                                <rect key="frame" x="138.66666666666666" y="686" width="116" height="26"/>
+                                <rect key="frame" x="138.66666666666666" y="686" width="115.66666666666666" height="26"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
                                 <color key="currentPageIndicatorTintColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>

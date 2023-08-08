@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8PC-rd-vEX">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8PC-rd-vEX">
                                 <rect key="frame" x="0.0" y="59" width="393" height="627"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K9d-mg-csL">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="K9d-mg-csL">
                                     <size key="itemSize" width="393" height="605"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -28,7 +28,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="Xcd-MP-Sjz" customClass="OnboardingCollectionViewCell" customModule="Food_Order" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="605"/>
+                                        <rect key="frame" x="0.0" y="11" width="393" height="605"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WoQ-80-lHp">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="605"/>
@@ -41,18 +41,27 @@
                                                     <rect key="frame" x="16" y="514" width="361" height="75"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery At Your Doorstep" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsi-T7-JfL">
-                                                            <rect key="frame" x="45.333333333333343" y="0.0" width="270.66666666666663" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and Online reservation system for restaurants and cafes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7x-th-Wpr">
-                                                            <rect key="frame" x="12.333333333333343" y="39" width="336.33333333333326" height="36"/>
+                                                            <rect key="frame" x="0.0" y="39" width="361" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="l7x-th-Wpr" firstAttribute="top" secondItem="hsi-T7-JfL" secondAttribute="bottom" constant="16" id="P2z-eZ-YQF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="l7x-th-Wpr" secondAttribute="trailing" id="UuF-sN-tBy"/>
+                                                        <constraint firstItem="l7x-th-Wpr" firstAttribute="leading" secondItem="9el-jF-bLE" secondAttribute="leading" id="Z7j-wg-gaS"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hsi-T7-JfL" secondAttribute="trailing" id="fI1-OX-fU8"/>
+                                                        <constraint firstItem="hsi-T7-JfL" firstAttribute="leading" secondItem="9el-jF-bLE" secondAttribute="leading" id="kwd-ss-5vw"/>
+                                                        <constraint firstItem="hsi-T7-JfL" firstAttribute="top" secondItem="9el-jF-bLE" secondAttribute="top" id="mae-8R-lJP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="l7x-th-Wpr" secondAttribute="bottom" id="pgb-nW-1jR"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>

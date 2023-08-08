@@ -41,13 +41,21 @@
                                 <rect key="frame" x="121.66666666666669" y="728" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.72105235927152322" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Aua-fm-g2g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Aua-fm-g2g"/>
                                     <constraint firstAttribute="height" constant="50" id="z0e-a2-bT0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3A0-ll-zUF"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-Ht-frF">
                                 <rect key="frame" x="138.66666666666666" y="686" width="116" height="26"/>
@@ -68,6 +76,11 @@
                             <constraint firstItem="8PC-rd-vEX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xlA-46-Cle"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="8PC-rd-vEX" id="ExI-8R-8eD"/>
+                        <outlet property="nextButton" destination="cpE-Kv-X3R" id="HkX-cC-g2A"/>
+                        <outlet property="pageControl" destination="3Fm-Ht-frF" id="cpT-Hc-QlK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

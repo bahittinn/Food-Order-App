@@ -16,6 +16,7 @@
 		64AAD4FC2A82BFDC007CD63D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD4FB2A82BFDC007CD63D /* UIView+Extension.swift */; };
 		64AAD4FE2A82C73C007CD63D /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD4FD2A82C73C007CD63D /* OnboardingSlide.swift */; };
 		64AAD5002A82CA33007CD63D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD4FF2A82CA33007CD63D /* OnboardingCollectionViewCell.swift */; };
+		64AAD5032A82DA46007CD63D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD5022A82DA46007CD63D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		64AAD4FB2A82BFDC007CD63D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		64AAD4FD2A82C73C007CD63D /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		64AAD4FF2A82CA33007CD63D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		64AAD5022A82DA46007CD63D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		64695EA02A817FE900504EE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				64AAD5012A82DA2E007CD63D /* Home */,
 				64695EA22A817FFD00504EE8 /* Onboarding */,
 			);
 			path = Views;
@@ -114,6 +117,14 @@
 				64AAD4FB2A82BFDC007CD63D /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64AAD5012A82DA2E007CD63D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64AAD5022A82DA46007CD63D /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				64695E8D2A817CA900504EE8 /* SceneDelegate.swift in Sources */,
 				64AAD4FC2A82BFDC007CD63D /* UIView+Extension.swift in Sources */,
 				64695EA42A81801B00504EE8 /* OnboardingViewController.swift in Sources */,
+				64AAD5032A82DA46007CD63D /* HomeViewController.swift in Sources */,
 				64AAD5002A82CA33007CD63D /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

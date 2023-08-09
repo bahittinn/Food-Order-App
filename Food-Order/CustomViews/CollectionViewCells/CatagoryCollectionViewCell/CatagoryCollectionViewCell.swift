@@ -9,6 +9,8 @@ import UIKit
 import Kingfisher
 class CatagoryCollectionViewCell: UICollectionViewCell {
     
+    static let identifier = String(describing: CatagoryCollectionViewCell.self)
+    
     @IBOutlet weak var catagoryTitleLabel: UILabel!
     @IBOutlet weak var catagoryImageView: UIImageView!
     override func awakeFromNib() {

@@ -16,6 +16,6 @@ class CatagoryCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     func setup(category: DishCategory) {
-        
+     
     }
 }

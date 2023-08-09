@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44B0E2C174661251644B4A80 /* Pods_Food_Order.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBC851E6CDC827A844BFA1F /* Pods_Food_Order.framework */; };
 		64695E8B2A817CA900504EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64695E8A2A817CA900504EE8 /* AppDelegate.swift */; };
 		64695E8D2A817CA900504EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64695E8C2A817CA900504EE8 /* SceneDelegate.swift */; };
 		64695E922A817CA900504EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64695E902A817CA900504EE8 /* Main.storyboard */; };
 		64695E942A817CA900504EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64695E932A817CA900504EE8 /* Assets.xcassets */; };
 		64695E972A817CA900504EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64695E952A817CA900504EE8 /* LaunchScreen.storyboard */; };
 		64695EA42A81801B00504EE8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64695EA32A81801B00504EE8 /* OnboardingViewController.swift */; };
+		647836E62A841DC10055725C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 647836E52A841DC10055725C /* Kingfisher */; };
 		64AAD4FC2A82BFDC007CD63D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD4FB2A82BFDC007CD63D /* UIView+Extension.swift */; };
 		64AAD4FE2A82C73C007CD63D /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD4FD2A82C73C007CD63D /* OnboardingSlide.swift */; };
 		64AAD5002A82CA33007CD63D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD4FF2A82CA33007CD63D /* OnboardingCollectionViewCell.swift */; };
@@ -38,6 +40,9 @@
 		64F992782A84115F007D97F8 /* CatagoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		64F992792A84115F007D97F8 /* CatagoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatagoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		64F9927C2A8412F6007D97F8 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		CF7E9D7790DA6D8F389003B8 /* Pods-Food-Order.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food-Order.debug.xcconfig"; path = "Target Support Files/Pods-Food-Order/Pods-Food-Order.debug.xcconfig"; sourceTree = "<group>"; };
+		DFA7130CA7195DA18703E4AE /* Pods-Food-Order.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food-Order.release.xcconfig"; path = "Target Support Files/Pods-Food-Order/Pods-Food-Order.release.xcconfig"; sourceTree = "<group>"; };
+		EFBC851E6CDC827A844BFA1F /* Pods_Food_Order.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Order.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647836E62A841DC10055725C /* Kingfisher in Frameworks */,
+				44B0E2C174661251644B4A80 /* Pods_Food_Order.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EFAD9B552FF728222C858F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFBC851E6CDC827A844BFA1F /* Pods_Food_Order.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64695E7E2A817CA900504EE8 = {
 			isa = PBXGroup;
 			children = (
 				64695E892A817CA900504EE8 /* Food-Order */,
 				64695E882A817CA900504EE8 /* Products */,
+				CAD6A20ECC9947F516A80026 /* Pods */,
+				3EFAD9B552FF728222C858F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +169,15 @@
 			path = CatagoryCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		CAD6A20ECC9947F516A80026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF7E9D7790DA6D8F389003B8 /* Pods-Food-Order.debug.xcconfig */,
+				DFA7130CA7195DA18703E4AE /* Pods-Food-Order.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64695E9B2A817CA900504EE8 /* Build configuration list for PBXNativeTarget "Food-Order" */;
 			buildPhases = (
+				9F649092D6C4E990245FC099 /* [CP] Check Pods Manifest.lock */,
 				64695E832A817CA900504EE8 /* Sources */,
 				64695E842A817CA900504EE8 /* Frameworks */,
 				64695E852A817CA900504EE8 /* Resources */,
@@ -168,6 +195,9 @@
 			dependencies = (
 			);
 			name = "Food-Order";
+			packageProductDependencies = (
+				647836E52A841DC10055725C /* Kingfisher */,
+			);
 			productName = "Food-Order";
 			productReference = 64695E872A817CA900504EE8 /* Food-Order.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 64695E7E2A817CA900504EE8;
+			packageReferences = (
+				647836E42A841DC10055725C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 64695E882A817CA900504EE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,6 +251,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F649092D6C4E990245FC099 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food-Order-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64695E832A817CA900504EE8 /* Sources */ = {
@@ -374,6 +432,7 @@
 		};
 		64695E9C2A817CA900504EE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7E9D7790DA6D8F389003B8 /* Pods-Food-Order.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -401,6 +460,7 @@
 		};
 		64695E9D2A817CA900504EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA7130CA7195DA18703E4AE /* Pods-Food-Order.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +508,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		647836E42A841DC10055725C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		647836E52A841DC10055725C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647836E42A841DC10055725C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64695E7F2A817CA900504EE8 /* Project object */;
 }

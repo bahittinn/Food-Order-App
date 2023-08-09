@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
+    @IBOutlet weak var populerCollectionView: UICollectionView!
     var categories: [DishCategory] = [
         .init(id: "id1", name: "turkish dish 1", image: "https://picsum.photos/100/200"),
         .init(id: "id2", name: "turkish dish 2", image: "https://picsum.photos/100/200"),
@@ -24,6 +25,7 @@ class HomeViewController: UIViewController {
     }
     private func registerCells() {
         categoryCollectionView.register(UINib(nibName: CatagoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CatagoryCollectionViewCell.identifier)
+        populerCollectionView.register(UINib(nibName: CatagoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CatagoryCollectionViewCell.identifier)
     }
 }
 

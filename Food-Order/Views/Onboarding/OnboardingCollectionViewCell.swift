@@ -5,8 +5,7 @@
 //  Created by Bahittin on 8.08.2023.
 //
 
-import UIKit
-import Kingfisher
+import UIKit 
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
     

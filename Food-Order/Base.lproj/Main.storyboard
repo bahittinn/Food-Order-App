@@ -243,19 +243,23 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="er0-MT-aei">
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="er0-MT-aei">
                                                         <rect key="frame" x="0.0" y="53" width="393" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="4HI-xN-PMi"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PfF-81-NJ7">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="PfF-81-NJ7">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="40" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="zgG-G1-Fwb" id="KNZ-hB-FIG"/>
+                                                            <outlet property="delegate" destination="zgG-G1-Fwb" id="yA5-me-ECd"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -294,11 +298,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Yummie" id="u3s-nT-4lg">
                         <barButtonItem key="rightBarButtonItem" image="cart.circle.fill" catalog="system" id="xxZ-cx-TXc">
-                            <color key="tintColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" red="0.55686274509803924" green="0.16078431372549018" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="qqL-0O-Jhq" id="WoW-bl-WzX"/>
+                        <outlet property="chefsSpecialsCollectionView" destination="er0-MT-aei" id="unc-fe-45P"/>
                         <outlet property="populerCollectionView" destination="atn-iA-Mhc" id="no5-mr-Abh"/>
                     </connections>
                 </viewController>

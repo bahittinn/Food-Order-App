@@ -11,6 +11,8 @@
 		64692EDA2A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64692ED82A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift */; };
 		64692EDB2A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64692ED92A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib */; };
 		64692EDD2A85612B00FB3720 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64692EDC2A85612B00FB3720 /* Dish.swift */; };
+		64692EE12A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64692EDF2A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.swift */; };
+		64692EE22A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64692EE02A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.xib */; };
 		64695E8B2A817CA900504EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64695E8A2A817CA900504EE8 /* AppDelegate.swift */; };
 		64695E8D2A817CA900504EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64695E8C2A817CA900504EE8 /* SceneDelegate.swift */; };
 		64695E922A817CA900504EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64695E902A817CA900504EE8 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		64692ED82A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
 		64692ED92A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		64692EDC2A85612B00FB3720 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		64692EDF2A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
+		64692EE02A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefsSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
 		64695E872A817CA900504EE8 /* Food-Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64695E8A2A817CA900504EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64695E8C2A817CA900504EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 				64692ED92A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib */,
 			);
 			path = DishPortraitCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		64692EDE2A85695300FB3720 /* ChefsSpecialsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				64692EDF2A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.swift */,
+				64692EE02A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.xib */,
+			);
+			path = ChefsSpecialsCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		64695E7E2A817CA900504EE8 = {
@@ -187,6 +200,7 @@
 			children = (
 				64692ED72A855ED800FB3720 /* DishPortraitCollectionViewCell */,
 				64F992752A84112E007D97F8 /* CatagoryCollectionViewCell */,
+				64692EDE2A85695300FB3720 /* ChefsSpecialsCollectionViewCell */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -278,6 +292,7 @@
 				64695E972A817CA900504EE8 /* LaunchScreen.storyboard in Resources */,
 				64692EDB2A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib in Resources */,
 				64695E942A817CA900504EE8 /* Assets.xcassets in Resources */,
+				64692EE22A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.xib in Resources */,
 				64695E922A817CA900504EE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +339,7 @@
 				64F9927D2A8412F6007D97F8 /* DishCategory.swift in Sources */,
 				647836E82A841ED20055725C /* String+Extension.swift in Sources */,
 				647836EB2A8424B50055725C /* CardView.swift in Sources */,
+				64692EE12A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.swift in Sources */,
 				64AAD5002A82CA33007CD63D /* OnboardingCollectionViewCell.swift in Sources */,
 				64692EDD2A85612B00FB3720 /* Dish.swift in Sources */,
 				64692EDA2A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift in Sources */,

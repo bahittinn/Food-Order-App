@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var populerCollectionView: UICollectionView!
+    @IBOutlet weak var chefsSpecialsCollectionView: UICollectionView!
     var categories: [DishCategory] = [
         .init(id: "id1", name: "turkish dish 1", image: "https://picsum.photos/100/200"),
         .init(id: "id2", name: "turkish dish 2", image: "https://picsum.photos/100/200"),
@@ -26,6 +27,13 @@ class HomeViewController: UIViewController {
         .init(id: "id3", name: "Hamburger", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 221)
     ]
     
+    var chefsSpecials: [Dish] = [
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
@@ -33,6 +41,7 @@ class HomeViewController: UIViewController {
     private func registerCells() {
         categoryCollectionView.register(UINib(nibName: CatagoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CatagoryCollectionViewCell.identifier)
         populerCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+        chefsSpecialsCollectionView.register(UINib(nibName: ChefsSpecialsCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: ChefsSpecialsCollectionViewCell.identifier)
     }
 }
 
@@ -43,6 +52,8 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
             return categories.count
         case populerCollectionView:
             return populers.count
+        case chefsSpecialsCollectionView:
+            return chefsSpecials.count
         default: return 0
         }
     }
@@ -56,6 +67,10 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         case populerCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
             cell.setup(dish: populers[indexPath.row])
+            return cell
+        case chefsSpecialsCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChefsSpecialsCollectionViewCell.identifier, for: indexPath) as! ChefsSpecialsCollectionViewCell
+            cell.setup(dish: chefsSpecials[indexPath.row])
             return cell
         default: return UICollectionViewCell()
         }

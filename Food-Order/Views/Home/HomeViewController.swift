@@ -19,6 +19,13 @@ class HomeViewController: UIViewController {
         .init(id: "id5", name: "turkish dish 5", image: "https://picsum.photos/100/200"),
         .init(id: "id6", name: "turkish dish 6", image: "https://picsum.photos/100/200"),
     ]
+    
+    var populers: [Dish] = [
+        .init(id: "id1", name: "Garri", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 340),
+        .init(id: "id2", name: "Pizza", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 620),
+        .init(id: "id3", name: "Hamburger", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 221)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
@@ -31,11 +38,28 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
+        switch collectionView {
+        case categoryCollectionView:
+            return categories.count
+        case populerCollectionView:
+            return populers.count
+        default: return 0
+        }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CatagoryCollectionViewCell.identifier, for: indexPath) as! CatagoryCollectionViewCell
-        cell.setup(category: categories[indexPath.row])
-        return cell
+        
+        switch collectionView {
+        case categoryCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CatagoryCollectionViewCell.identifier, for: indexPath) as! CatagoryCollectionViewCell
+            cell.setup(category: categories[indexPath.row])
+            return cell
+        case populerCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
+            cell.setup(dish: populers[indexPath.row])
+            return cell
+        default: return UICollectionViewCell()
+        }
+        
+       
     }
 }

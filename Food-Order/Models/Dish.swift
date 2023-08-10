@@ -12,9 +12,9 @@ struct Dish {
     let name       : String?
     let desription : String?
     let image      : String?
-    let calories   : Double?
+    let calories   : Int?
     
     var formattetCalories: String {
-        return String(format: "%2f", calories ?? 0)
+        return "\(calories) calories"
     }
 }

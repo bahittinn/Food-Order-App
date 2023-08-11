@@ -13,12 +13,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var populerCollectionView: UICollectionView!
     @IBOutlet weak var chefsSpecialsCollectionView: UICollectionView!
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "turkish dish 1", image: "https://picsum.photos/100/200"),
-        .init(id: "id2", name: "turkish dish 2", image: "https://picsum.photos/100/200"),
-        .init(id: "id3", name: "turkish dish 3", image: "https://picsum.photos/100/200"),
-        .init(id: "id4", name: "turkish dish 4", image: "https://picsum.photos/100/200"),
-        .init(id: "id5", name: "turkish dish 5", image: "https://picsum.photos/100/200"),
-        .init(id: "id6", name: "turkish dish 6", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "turkish dish 1", image: "https://picsum.photos/100/100"),
+        .init(id: "id2", name: "turkish dish 2", image: "https://picsum.photos/100/100"),
+        .init(id: "id3", name: "turkish dish 3", image: "https://picsum.photos/100/100"),
+        .init(id: "id4", name: "turkish dish 4", image: "https://picsum.photos/100/100"),
+        .init(id: "id5", name: "turkish dish 5", image: "https://picsum.photos/100/100"),
+        .init(id: "id6", name: "turkish dish 6", image: "https://picsum.photos/100/100"),
     ]
     
     var populers: [Dish] = [
@@ -28,10 +28,10 @@ class HomeViewController: UIViewController {
     ]
     
     var chefsSpecials: [Dish] = [
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220)
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220)
     ]
     
     override func viewDidLoad() {

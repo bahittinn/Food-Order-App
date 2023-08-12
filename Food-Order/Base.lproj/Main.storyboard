@@ -314,7 +314,7 @@
         <!--Dish Detail View Controller-->
         <scene sceneID="SW5-7N-ORL">
             <objects>
-                <viewController id="qHS-C3-tfn" customClass="DishDetailViewController" customModule="Food_Order" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DishDetailViewController" id="qHS-C3-tfn" customClass="DishDetailViewController" customModule="Food_Order" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pMP-XZ-Zhs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

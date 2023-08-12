@@ -311,19 +311,19 @@
             </objects>
             <point key="canvasLocation" x="2110.6870229007632" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Dish Detail View Controller-->
         <scene sceneID="SW5-7N-ORL">
             <objects>
-                <viewController id="qHS-C3-tfn" sceneMemberID="viewController">
+                <viewController id="qHS-C3-tfn" customClass="DishDetailViewController" customModule="Food_Order" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pMP-XZ-Zhs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tjt-s9-8Bz">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="763"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="594.66666666666663"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zy0-OZ-fF2">
-                                <rect key="frame" x="16" y="779" width="361" height="23"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Zy0-OZ-fF2">
+                                <rect key="frame" x="16" y="610.66666666666663" width="361" height="191.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ero-qd-gnm">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="23"/>
@@ -345,6 +345,46 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxN-U5-bLh">
+                                        <rect key="frame" x="0.0" y="39" width="361" height="20.333333333333329"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="systemGrayColor"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5X-Qw-sxr">
+                                        <rect key="frame" x="0.0" y="75.333333333333371" width="361" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ZBN-eA-15B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJv-ON-Zu9">
+                                        <rect key="frame" x="0.0" y="141.33333333333337" width="361" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HsZ-9d-4fG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Place Order">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="placeOrderButtonClicked:" destination="qHS-C3-tfn" eventType="touchUpInside" id="7EM-JA-20g"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -360,6 +400,13 @@
                             <constraint firstItem="CX9-0d-RuH" firstAttribute="trailing" secondItem="Zy0-OZ-fF2" secondAttribute="trailing" constant="16" id="rht-p3-PSB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="2sT-24-7Pt" id="I6U-Bj-Oa0"/>
+                        <outlet property="descriptionLabel" destination="fxN-U5-bLh" id="NgS-JL-hh3"/>
+                        <outlet property="dishImageView" destination="tjt-s9-8Bz" id="AZ5-ky-Pxi"/>
+                        <outlet property="nameField" destination="G5X-Qw-sxr" id="oVt-q7-pto"/>
+                        <outlet property="titleLabel" destination="14c-0Y-0XI" id="nhs-Da-nbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Riv-Dn-lDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,6 +438,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

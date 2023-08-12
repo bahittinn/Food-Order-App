@@ -13,25 +13,25 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var populerCollectionView: UICollectionView!
     @IBOutlet weak var chefsSpecialsCollectionView: UICollectionView!
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "turkish dish 1", image: "https://picsum.photos/100/100"),
-        .init(id: "id2", name: "turkish dish 2", image: "https://picsum.photos/100/100"),
-        .init(id: "id3", name: "turkish dish 3", image: "https://picsum.photos/100/100"),
-        .init(id: "id4", name: "turkish dish 4", image: "https://picsum.photos/100/100"),
-        .init(id: "id5", name: "turkish dish 5", image: "https://picsum.photos/100/100"),
-        .init(id: "id6", name: "turkish dish 6", image: "https://picsum.photos/100/100"),
+        .init(id: "id1", name: "turkish dish 1", image: "https://picsum.photos/100/200"),
+        .init(id: "id2", name: "turkish dish 2", image: "https://picsum.photos/100/200"),
+        .init(id: "id3", name: "turkish dish 3", image: "https://picsum.photos/100/200"),
+        .init(id: "id4", name: "turkish dish 4", image: "https://picsum.photos/100/200"),
+        .init(id: "id5", name: "turkish dish 5", image: "https://picsum.photos/100/200"),
+        .init(id: "id6", name: "turkish dish 6", image: "https://picsum.photos/100/200"),
     ]
     
     var populers: [Dish] = [
-        .init(id: "id1", name: "Garri", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 340),
+        .init(id: "id1", name: "Garri", desription: "this is the best i have ever tasted this is the best i have ever tasted this is the best i have ever tasted this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 340),
         .init(id: "id2", name: "Pizza", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 620),
         .init(id: "id3", name: "Hamburger", desription: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 221)
     ]
     
     var chefsSpecials: [Dish] = [
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220),
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220),
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220),
-        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/100", calories: 220)
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220),
+        .init(id: "id1", name: "doner", desription: "delicous doner", image: "https://picsum.photos/100/200", calories: 220)
     ]
     
     override func viewDidLoad() {
@@ -80,6 +80,7 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
             
         } else {
             let controller = DishDetailViewController.instantiate()
+            controller.dish = collectionView == populerCollectionView ? populers[indexPath.row] : chefsSpecials[indexPath.row]
             navigationController?.pushViewController(controller,animated: true)
         }
     }

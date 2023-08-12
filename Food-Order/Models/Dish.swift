@@ -15,6 +15,6 @@ struct Dish {
     let calories   : Int?
     
     var formattetCalories: String {
-        return "\(calories) calories"
+        return "\(calories!) calories"
     }
 }

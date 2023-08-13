@@ -9,6 +9,17 @@ import UIKit
 
 class DishListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dishImageView: UIImageView!
+    
+    
+    func setup(dish: Dish) {
+        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        titleLabel.text = dish.name
+        descriptionLabel.text = dish.desription
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -16,8 +27,6 @@ class DishListTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        
     }
     
 }

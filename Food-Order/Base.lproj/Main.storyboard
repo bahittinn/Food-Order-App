@@ -443,6 +443,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EZM-LC-kG5"/>
+                    <connections>
+                        <outlet property="tableView" destination="5x2-fJ-Zfn" id="2lf-H0-wPR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYe-bT-BT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

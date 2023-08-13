@@ -10,6 +10,7 @@
 		44B0E2C174661251644B4A80 /* Pods_Food_Order.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBC851E6CDC827A844BFA1F /* Pods_Food_Order.framework */; };
 		6410C8C52A8969A500FDD929 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410C8C42A8969A500FDD929 /* ListDishesViewController.swift */; };
 		6410C8C82A896F8800FDD929 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410C8C72A896F8800FDD929 /* ListOrdersViewController.swift */; };
+		6410C8CA2A8970B200FDD929 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410C8C92A8970B200FDD929 /* Orders.swift */; };
 		64692EDA2A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64692ED82A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift */; };
 		64692EDB2A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64692ED92A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib */; };
 		64692EDD2A85612B00FB3720 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64692EDC2A85612B00FB3720 /* Dish.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		6410C8C42A8969A500FDD929 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		6410C8C72A896F8800FDD929 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		6410C8C92A8970B200FDD929 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 		64692ED82A855EFA00FB3720 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
 		64692ED92A855EFA00FB3720 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		64692EDC2A85612B00FB3720 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				64AAD4FD2A82C73C007CD63D /* OnboardingSlide.swift */,
 				64F9927C2A8412F6007D97F8 /* DishCategory.swift */,
 				64692EDC2A85612B00FB3720 /* Dish.swift */,
+				6410C8C92A8970B200FDD929 /* Orders.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				64F9927D2A8412F6007D97F8 /* DishCategory.swift in Sources */,
 				647836E82A841ED20055725C /* String+Extension.swift in Sources */,
 				647836EB2A8424B50055725C /* CardView.swift in Sources */,
+				6410C8CA2A8970B200FDD929 /* Orders.swift in Sources */,
 				64692EE12A85698F00FB3720 /* ChefsSpecialsCollectionViewCell.swift in Sources */,
 				6410C8C52A8969A500FDD929 /* ListDishesViewController.swift in Sources */,
 				64AAD5002A82CA33007CD63D /* OnboardingCollectionViewCell.swift in Sources */,

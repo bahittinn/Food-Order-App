@@ -22,6 +22,12 @@ class DishListTableViewCell: UITableViewCell {
         descriptionLabel.text = dish.desription
     }
     
+    func setup (order: Order) {
+        dishImageView.kf.setImage(with: order.dish?.image?.asUrl)
+        titleLabel.text = order.dish?.name
+        descriptionLabel.text = order.dish?.desription
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
